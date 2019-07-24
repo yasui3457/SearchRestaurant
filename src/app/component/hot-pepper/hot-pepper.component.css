@@ -1,0 +1,24 @@
+table, td, th {
+    width: 100%;
+    border: 1px #000000 solid;
+}
+
+.NameCell {
+    width: 30%;
+}
+
+.MemoCell {
+    width: 30%;
+}
+
+.AddressCell {
+    width: 30%;
+}
+
+.ButtonCell {
+    width: 10%;
+}
+
+.ButtonUrl {
+    background-color: red;
+}
