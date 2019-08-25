@@ -5,11 +5,13 @@ import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HotPepperComponent } from './component/hot-pepper/hot-pepper.component';
+import { GurunabiComponent } from './component/gurunabi/gurunabi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HotPepperComponent
+    HotPepperComponent,
+    GurunabiComponent
   ],
   imports: [
     BrowserModule,

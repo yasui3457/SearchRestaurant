@@ -1,0 +1,14 @@
+<div>
+    KeyWord:
+    <input [(ngModel)]="keyword"/>
+    <button (click)="searchRestaurant()">検索</button>
+</div>
+ぐるなびによる検索
+<table>
+    <tr *ngFor="let restaurant of restaurants">
+        <th class="NameCell">{{restaurant.name}}</th>
+        <th class="MemoCell">{{restaurant.memo}}</th>
+        <th class="AddressCell">{{restaurant.address}}</th>
+        <th class="AddressCell"><button class="ButtonUrl" (click)="jumpUrl(restaurant.url)">Jump</button></th>
+    </tr>
+</table>

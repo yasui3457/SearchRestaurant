@@ -1,6 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>{{title}}</h1>
-<button>HotPepper</button>
-<button>ぐるなび</button>
 
-<app-hot-pepper></app-hot-pepper>
+<!--ngIfによる画面遷移-->
+<!--
+<button (click)="clickHotPepper()">HotPepper</button>
+<button (click)="clickGurunabi()">ぐるなび</button>
+
+<div *ngIf="selectedComponentNum == HOT_PEPPER_NUM else gurunabi">
+    <app-hot-pepper></app-hot-pepper>
+</div>
+<ng-template #gurunabi>
+    <app-gurunabi></app-gurunabi>
+</ng-template>
+-->
+
+<!--Routingによる画面遷移-->
+<nav>
+    <button><a routerLink="/hotpepper">HotPepper</a></button>
+    <button><a routerLink="/gurunabi">ぐるなび</a></button>
+</nav>
+<router-outlet></router-outlet>
